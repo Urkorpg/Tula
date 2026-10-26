@@ -1,0 +1,19 @@
+# =============================================
+# CONFIGURACIÓN DE CLOUDFLARE - TULA
+# "Yo la hago y tú la disfrutas"
+# =============================================
+
+name = "tula-api"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Base de datos D1
+# El database_id lo obtienes al ejecutar: npx wrangler d1 create tula-db
+[[d1_databases]]
+binding = "DB"
+database_name = "tula-db"
+database_id = "d987b9dd-fd67-498b-95ac-4e456988776c"
+
+# Variables de entorno
+[vars]
+JWT_SECRET = "tula_cambia_esto_por_una_clave_secreta_muy_larga_y_segura_12345"

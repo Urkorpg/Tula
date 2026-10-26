@@ -1,0 +1,21 @@
+{
+  "name": "tula-cloudflare",
+  "version": "1.0.0",
+  "description": "Tula - Yo la hago y tú la disfrutas - Cloudflare Workers + D1 + Pages",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy:api": "wrangler deploy",
+    "deploy:frontend": "wrangler pages deploy public --project-name=tula",
+    "deploy:all": "npm run deploy:api && npm run deploy:frontend",
+    "db:init": "wrangler d1 execute tula-db --file=./schema.sql --remote",
+    "db:query": "wrangler d1 execute tula-db --remote --command",
+    "logs": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^3.114.0"
+  },
+  "dependencies": {
+    "itty-router": "^4.0.0"
+  }
+}
