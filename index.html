@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tula - Yo la hago y tú la disfrutas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-hat-chef"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="slogan-top">Yo la hago</span>
+                    <span class="brand-name">Tula</span>
+                    <span class="slogan-bottom">y tú la disfrutas</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active" data-section="inicio">Inicio</a></li>
+                    <li><a href="#" class="nav-link" data-section="comidas">Comidas Elaboradas</a></li>
+                    <li><a href="#" class="nav-link" data-section="preelaborados">Preelaborados</a></li>
+                    <li><a href="#" class="nav-link" data-section="bebidas">Bebidas</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Buscar en el menú de Tula...">
+                </div>
+                <button class="cart-btn">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Sección Inicio -->
+        <section id="inicio" class="section active">
+            <div class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <span class="hero-badge">🍳 COCINA ARTESANAL</span>
+                    <h1>El sabor de lo hecho<br>con cariño</h1>
+                    <p>Comidas elaboradas y productos preelaborados para disfrutar de la cocina a tu manera.</p>
+                    <p class="hero-slogan">"Yo la hago y tú la disfrutas"</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-section="comidas">
+                            <i class="fa-solid fa-utensils"></i> Comidas Elaboradas
+                        </button>
+                        <button class="btn btn-outline" data-section="preelaborados">
+                            <i class="fa-solid fa-bowl-food"></i> Preelaborados
+                        </button>
+                        <button class="btn btn-outline" data-section="bebidas">
+                            <i class="fa-solid fa-glass-water"></i> Bebidas
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Especialidades -->
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Especialidad de la casa</span>
+                    <h2>Menús del día frescos y naturales</h2>
+                </div>
+                <div class="featured-products">
+                    <div class="product-card featured">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" alt="Ensalada Mediterránea">
+                            <span class="product-badge">Popular</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Ensalada Mediterránea</h3>
+                            <p>Fresca mezcla de vegetales con aderezo especial</p>
+                            <span class="price">$8.50</span>
+                        </div>
+                    </div>
+                    <div class="product-card featured">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400" alt="Pollo al Limón">
+                        </div>
+                        <div class="product-info">
+                            <h3>Pollo al Limón</h3>
+                            <p>Tierno pollo con salsa cítrica casera</p>
+                            <span class="price">$12.00</span>
+                        </div>
+                    </div>
+                    <div class="product-card featured">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400" alt="Bowl Vegetariano">
+                            <span class="product-badge">Nuevo</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bowl Vegetariano</h3>
+                            <p>Nutritivo bowl con ingredientes orgánicos</p>
+                            <span class="price">$9.75</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Por qué elegirnos -->
+            <div class="why-us">
+                <div class="container">
+                    <h2>¿Por qué elegir Tula?</h2>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fa-solid fa-leaf"></i>
+                            <h3>Ingredientes Frescos</h3>
+                            <p>Seleccionamos los mejores ingredientes del mercado local</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-heart"></i>
+                            <h3>Hecho con Amor</h3>
+                            <p>Cada platillo es preparado con dedicación y cariño</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-truck"></i>
+                            <h3>Entrega Rápida</h3>
+                            <p>Tu comida llega caliente y en perfectas condiciones</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fa-solid fa-star"></i>
+                            <h3>Calidad Garantizada</h3>
+                            <p>Comprometidos con la excelencia en cada bocado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Comidas Elaboradas -->
+        <section id="comidas" class="section">
+            <div class="container">
+                <div class="menu-header">
+                    <h1><i class="fa-solid fa-utensils"></i> Comidas Elaboradas</h1>
+                    <p>Platillos preparados con ingredientes frescos, listos para disfrutar</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=400" alt="Arroz con Pollo">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Arroz con Pollo Criollo</h3>
+                                <span class="menu-price">$10.50</span>
+                            </div>
+                            <p>Arroz amarillo con tiernos trozos de pollo, vegetales frescos y especias tradicionales</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-bowl-food"></i> Porción individual</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=400" alt="Lasagna">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Lasagna de Carne</h3>
+                                <span class="menu-price">$12.00</span>
+                            </div>
+                            <p>Capas de pasta fresca con ragú de carne, bechamel y queso gratinado</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-bowl-food"></i> Porción generosa</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400" alt="Carne Asada">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Carne Asada con Chimichurri</h3>
+                                <span class="menu-price">$14.50</span>
+                            </div>
+                            <p>Corte de res a la parrilla con chimichurri casero, papas y ensalada</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-bowl-food"></i> Plato completo</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400" alt="Pasta Alfredo">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Pasta Alfredo con Pollo</h3>
+                                <span class="menu-price">$11.00</span>
+                            </div>
+                            <p>Fettuccine en cremosa salsa alfredo con tiras de pollo grillado</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-bowl-food"></i> Porción individual</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Pescado">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Filete de Pescado al Ajillo</h3>
+                                <span class="menu-price">$13.50</span>
+                            </div>
+                            <p>Filete fresco con salsa de ajo, acompañado de arroz blanco y vegetales</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-bowl-food"></i> Plato saludable</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Preelaborados -->
+        <section id="preelaborados" class="section">
+            <div class="container">
+                <div class="menu-header">
+                    <h1><i class="fa-solid fa-bowl-food"></i> Preelaborados</h1>
+                    <p>Productos listos para que los prepares en casa con tu toque personal</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=400" alt="Empanadas">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Empanadas de Carne (6 uds)</h3>
+                                <span class="menu-price">$8.00</span>
+                            </div>
+                            <p>Empanadas rellenas de carne molida sazonada, listas para hornear o freír</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-snowflake"></i> Congelado</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?w=400" alt="Croquetas">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Croquetas de Jamón (12 uds)</h3>
+                                <span class="menu-price">$9.50</span>
+                            </div>
+                            <p>Cremosas croquetas de jamón serrano, empanizadas y listas para freír</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-snowflake"></i> Congelado</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400" alt="Albondigas">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Albóndigas Caseras (500g)</h3>
+                                <span class="menu-price">$7.50</span>
+                            </div>
+                            <p>Albóndigas de res y cerdo con hierbas aromáticas, sin cocinar</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-snowflake"></i> Refrigerado</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400" alt="Masa de Pizza">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Masa de Pizza (2 bases)</h3>
+                                <span class="menu-price">$5.00</span>
+                            </div>
+                            <p>Masa artesanal estirada, lista para agregar tus ingredientes favoritos</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-snowflake"></i> Refrigerado</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=400" alt="Salsa">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Salsa Boloñesa Casera (500ml)</h3>
+                                <span class="menu-price">$6.50</span>
+                            </div>
+                            <p>Salsa de tomate con carne molida y especias, lista para calentar</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-jar"></i> Envasado</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Bebidas -->
+        <section id="bebidas" class="section">
+            <div class="container">
+                <div class="menu-header">
+                    <h1><i class="fa-solid fa-glass-water"></i> Bebidas</h1>
+                    <p>Refrescantes opciones naturales para acompañar tu comida</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=400" alt="Limonada">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Limonada Natural</h3>
+                                <span class="menu-price">$3.00</span>
+                            </div>
+                            <p>Limonada fresca hecha con limones naturales y un toque de hierbabuena</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-glass-water"></i> 500ml</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400" alt="Jugo de Naranja">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Jugo de Naranja Natural</h3>
+                                <span class="menu-price">$3.50</span>
+                            </div>
+                            <p>Jugo recién exprimido de naranjas dulces, sin azúcar añadida</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-glass-water"></i> 400ml</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400" alt="Batido">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Batido de Frutas Tropicales</h3>
+                                <span class="menu-price">$4.50</span>
+                            </div>
+                            <p>Mezcla cremosa de mango, piña y maracuyá con leche</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-glass-water"></i> 450ml</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1558857563-b371033873b8?w=400" alt="Té Helado">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Té Helado de Durazno</h3>
+                                <span class="menu-price">$3.25</span>
+                            </div>
+                            <p>Té negro infusionado con durazno natural, servido frío</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-glass-water"></i> 500ml</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400" alt="Café">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Café con Leche</h3>
+                                <span class="menu-price">$2.75</span>
+                            </div>
+                            <p>Café de grano molido con leche espumada, caliente o frío</p>
+                            <div class="menu-item-footer">
+                                <span class="portion"><i class="fa-solid fa-mug-hot"></i> 350ml</span>
+                                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo footer-logo">
+                        <div class="logo-text">
+                            <span class="slogan-top">Yo la hago</span>
+                            <span class="brand-name">Tula</span>
+                            <span class="slogan-bottom">y tú la disfrutas</span>
+                        </div>
+                    </div>
+                    <p>Comidas elaboradas y productos preelaborados para disfrutar de la cocina a tu manera.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fa-solid fa-envelope"></i> info@tulacocina.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Calle Principal #123, Ciudad</li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Horario</h4>
+                    <ul>
+                        <li>Lunes - Viernes: 8:00 AM - 8:00 PM</li>
+                        <li>Sábado: 9:00 AM - 6:00 PM</li>
+                        <li>Domingo: 10:00 AM - 4:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-link" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tula - Yo la hago y tú la disfrutas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float" id="whatsappFloat">
+        <div class="whatsapp-popup" id="whatsappPopup">
+            <div class="popup-header">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Atención Directa Tula</span>
+                <button class="popup-close" id="popupClose">&times;</button>
+            </div>
+            <div class="popup-body">
+                <p>¿Tienes consultas sobre un pedido especial o necesitas asistencia directa?</p>
+                <a href="https://wa.me/" target="_blank" class="whatsapp-chat-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Chatear por WhatsApp
+                </a>
+            </div>
+        </div>
+        <button class="whatsapp-btn" id="whatsappBtn">
+            <i class="fa-brands fa-whatsapp"></i>
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
